@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>549</width>
+    <height>442</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>IRNazanin</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>To Do List</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(205, 171, 143);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="but_additem">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>200</y>
+      <width>281</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>IRNazanin</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(250, 235, 215);
+color: rgb(99, 69, 44);</string>
+    </property>
+    <property name="text">
+     <string>اضافه به لیست</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="but_deleteitem">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>260</y>
+      <width>281</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>IRNazanin</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(250, 235, 215);
+color: rgb(99, 69, 44);</string>
+    </property>
+    <property name="text">
+     <string>حذف از لیست</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="but_clearall">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>320</y>
+      <width>281</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>IRNazanin</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(250, 235, 215);
+color: rgb(99, 69, 44);</string>
+    </property>
+    <property name="text">
+     <string>پاک کردن لیست</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_additem">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>140</y>
+      <width>281</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>FreeFarsi</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(250, 235, 215);
+color: rgb(99, 69, 44);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidget_mylist">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>241</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>IRNazanin</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(250, 235, 215);</string>
+    </property>
+    <property name="movement">
+     <enum>QListView::Snap</enum>
+    </property>
+    <property name="flow">
+     <enum>QListView::TopToBottom</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="but_save">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>380</y>
+      <width>281</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>IRNazanin</family>
+      <pointsize>18</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(250, 235, 215);
+color: rgb(99, 69, 44);</string>
+    </property>
+    <property name="text">
+     <string>ذخیره اطلاعات</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>90</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>IRNazanin</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+color: rgb(99, 69, 44);</string>
+    </property>
+    <property name="text">
+     <string>وارد به لیست:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>0</y>
+      <width>381</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>IRMaryam</family>
+      <pointsize>36</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+color: rgb(99, 69, 44);</string>
+    </property>
+    <property name="text">
+     <string>چک لیست روزانه</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <zorder>label_3</zorder>
+   <zorder>but_additem</zorder>
+   <zorder>but_deleteitem</zorder>
+   <zorder>but_clearall</zorder>
+   <zorder>listWidget_mylist</zorder>
+   <zorder>but_save</zorder>
+   <zorder>label_2</zorder>
+   <zorder>lineEdit_additem</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
