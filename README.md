@@ -11,6 +11,11 @@ A simple desktop To-Do List application built with Python and PyQt5. This app al
 - Load saved items on startup
 - Modal popup confirmation upon saving
 
+
+## Previwe
+
+
+
 ## Requirements
 
 - Python 3.x
