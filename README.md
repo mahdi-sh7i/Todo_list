@@ -14,6 +14,7 @@ A simple desktop To-Do List application built with Python and PyQt5. This app al
 
 ## Previwe
 
+![3](https://github.com/user-attachments/assets/e369ef00-d018-4f2b-8d86-2d941c5efdfe)
 
 
 ## Requirements
